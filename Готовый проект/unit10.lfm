@@ -1,0 +1,868 @@
+object Formzatd: TFormzatd
+  Left = 866
+  Height = 697
+  Top = 213
+  Width = 800
+  HorzScrollBar.Page = 768
+  VertScrollBar.Page = 697
+  VertScrollBar.Tracking = True
+  AutoScroll = True
+  Caption = 'Тесты и задачи по Термодинамике'
+  ClientHeight = 697
+  ClientWidth = 779
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.6.2.0'
+  object Panel1: TPanel
+    Left = -8
+    Height = 3790
+    Top = 0
+    Width = 776
+    ClientHeight = 3790
+    ClientWidth = 776
+    Color = 14286847
+    ParentColor = False
+    TabOrder = 0
+    OnClick = Panel1Click
+    OnMouseWheelDown = Panel1MouseWheelDown
+    OnMouseWheelUp = Panel1MouseWheelUp
+    object RadioGroup1: TRadioGroup
+      Left = 24
+      Height = 148
+      Top = 192
+      Width = 715
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 123
+      ClientWidth = 711
+      Color = clWhite
+      Items.Strings = (
+        '1) нагревание проволоки в пламени спиртовки;'
+        '2) кипение воды на электроплитке;'
+        '3) затухание маятника, колеблющегося в воздухе;'
+        '4) свечение нити накала электролампочки при пропускании через нее тока.'
+      )
+      OnClick = RadioGroup1Click
+      OnMouseWheelDown = RadioGroup1MouseWheelDown
+      OnMouseWheelUp = RadioGroup1MouseWheelUp
+      ParentColor = False
+      TabOrder = 0
+    end
+    object Label1: TLabel
+      Left = 26
+      Height = 72
+      Top = 120
+      Width = 714
+      AutoSize = False
+      Caption = 'Задача 1.  Примером перехода механической энергии во внутреннюю может служить '
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnClick = Label1Click
+      OnMouseWheelDown = Label1MouseWheelDown
+      OnMouseWheelUp = Label1MouseWheelUp
+    end
+    object Label2: TLabel
+      Left = 26
+      Height = 48
+      Top = 352
+      Width = 715
+      AutoSize = False
+      Caption = 'Задача 2.   Тепловой двигатель за один цикл получает от нагревателя 100 кДж теплоты и отдает холодильнику 60 кДж. Чему равен КПД этого двигателя (%)?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label2MouseWheelDown
+      OnMouseWheelUp = Label2MouseWheelUp
+    end
+    object RadioGroup2: TRadioGroup
+      Left = 27
+      Height = 129
+      Top = 400
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) 60'
+        '2) 67'
+        '3) 40'
+        '4) 25'
+      )
+      OnMouseWheelDown = RadioGroup2MouseWheelDown
+      OnMouseWheelUp = RadioGroup2MouseWheelUp
+      ParentColor = False
+      TabOrder = 1
+    end
+    object Label3: TLabel
+      Left = 26
+      Height = 72
+      Top = 544
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 3.   Каким должно быть отношение масс m1/m2 горячей и холодной воды для того, чтобы за счет охлаждения от 50°С до 30°С воды массы m1, вода массой m2 нагрелась от 20° до 30°С?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label3MouseWheelDown
+      OnMouseWheelUp = Label3MouseWheelUp
+    end
+    object RadioGroup3: TRadioGroup
+      Left = 25
+      Height = 129
+      Top = 616
+      Width = 715
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 711
+      Color = clWhite
+      Items.Strings = (
+        '1) 4'
+        '2) 2'
+        '3) 1'
+        '4) 1/2'
+      )
+      OnMouseWheelDown = RadioGroup3MouseWheelDown
+      OnMouseWheelUp = RadioGroup3MouseWheelUp
+      ParentColor = False
+      TabOrder = 2
+    end
+    object Label4: TLabel
+      Left = 25
+      Height = 56
+      Top = 760
+      Width = 715
+      AutoSize = False
+      Caption = 'Задача 4.   Тепловой двигатель с КПД 50% за один цикл отдает холодильнику 56 кДж теплоты. Какая работа им (кДж) совершается за один цикл?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label4MouseWheelDown
+      OnMouseWheelUp = Label4MouseWheelUp
+    end
+    object RadioGroup4: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 816
+      Width = 716
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 712
+      Color = clWhite
+      Items.Strings = (
+        '1) 40'
+        '2) 28'
+        '3) 21'
+        '4) 56'
+      )
+      OnMouseWheelDown = RadioGroup4MouseWheelDown
+      OnMouseWheelUp = RadioGroup4MouseWheelUp
+      ParentColor = False
+      TabOrder = 3
+    end
+    object Label5: TLabel
+      Left = 25
+      Height = 48
+      Top = 960
+      Width = 715
+      AutoSize = False
+      Caption = 'Задача 5.     Укажите единицу измерения величины, измеряемой произведе- нием pΔV.'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label5MouseWheelDown
+      OnMouseWheelUp = Label5MouseWheelUp
+    end
+    object RadioGroup5: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 1008
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) ватт'
+        '2) паскаль'
+        '3) литр'
+        '4) джоуль'
+      )
+      OnMouseWheelDown = RadioGroup5MouseWheelDown
+      OnMouseWheelUp = RadioGroup5MouseWheelUp
+      ParentColor = False
+      TabOrder = 4
+    end
+    object Label6: TLabel
+      Left = 25
+      Height = 48
+      Top = 1152
+      Width = 714
+      AutoSize = False
+      Caption = 'Задача 6.   Какому количеству теплоты (МДж) эквивалентна работа, совершаемая за 1 ч двигателем мощностью 2 кВт?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label6MouseWheelDown
+      OnMouseWheelUp = Label6MouseWheelUp
+    end
+    object RadioGroup6: TRadioGroup
+      Left = 25
+      Height = 129
+      Top = 1200
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) 0,2'
+        '2) 2'
+        '3) 3,6'
+        '4) 7,2'
+      )
+      OnMouseWheelDown = RadioGroup6MouseWheelDown
+      OnMouseWheelUp = RadioGroup6MouseWheelUp
+      ParentColor = False
+      TabOrder = 5
+    end
+    object Label7: TLabel
+      Left = 26
+      Height = 56
+      Top = 1344
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 7.   Найдите работу, совершаемую двумя молями идеального газа при его изобарном нагревании на 100°С (Дж). R=8,3Дж/моль•К.'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label7MouseWheelDown
+      OnMouseWheelUp = Label7MouseWheelUp
+    end
+    object RadioGroup7: TRadioGroup
+      Left = 25
+      Height = 137
+      Top = 1400
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 112
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) 166'
+        '2) 83'
+        '3) 830'
+        '4) 1660'
+      )
+      OnMouseWheelDown = RadioGroup7MouseWheelDown
+      OnMouseWheelUp = RadioGroup7MouseWheelUp
+      ParentColor = False
+      TabOrder = 6
+    end
+    object Label8: TLabel
+      Left = 24
+      Height = 52
+      Top = 1552
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 8.   При изохорном нагревании на 50 K идеальный газ получил 2 кДж теплоты. Какую работу совершил идеальный газ (Дж)?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label8MouseWheelDown
+      OnMouseWheelUp = Label8MouseWheelUp
+    end
+    object RadioGroup8: TRadioGroup
+      Left = 25
+      Height = 129
+      Top = 1608
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) 0,8'
+        '2) 1'
+        '3) 2'
+        '4) 0'
+      )
+      OnMouseWheelDown = RadioGroup8MouseWheelDown
+      OnMouseWheelUp = RadioGroup8MouseWheelUp
+      ParentColor = False
+      TabOrder = 7
+    end
+    object Label9: TLabel
+      Left = 25
+      Height = 72
+      Top = 1752
+      Width = 712
+      AutoSize = False
+      Caption = 'Задача 9.   Какой должна быть температура холодильника тепловой машины (°С), чтобы максимальное значение КПД равнялось 50%? Температура нагревателя 327°С.'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label9MouseWheelDown
+      OnMouseWheelUp = Label9MouseWheelUp
+    end
+    object RadioGroup9: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 1824
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) 35'
+        '2) 327'
+        '3) 27'
+        '4) 260'
+      )
+      OnMouseWheelDown = RadioGroup9MouseWheelDown
+      OnMouseWheelUp = RadioGroup9MouseWheelUp
+      ParentColor = False
+      TabOrder = 8
+    end
+    object Label10: TLabel
+      Left = 24
+      Height = 72
+      Top = 1968
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 10.   Температура нагревателя реальной тепловой машины 227°С, холодильника - +27°С. За один цикл газ получает от нагревателя 64 кДж теплоты, а отдает холодильнику 48 кДж. Определите КПД машины (%).'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label10MouseWheelDown
+      OnMouseWheelUp = Label10MouseWheelUp
+    end
+    object RadioGroup10: TRadioGroup
+      Left = 24
+      Height = 129
+      Top = 2040
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) 35'
+        '2) 25'
+        '3) 15'
+        '4) 40'
+      )
+      OnMouseWheelDown = RadioGroup10MouseWheelDown
+      OnMouseWheelUp = RadioGroup10MouseWheelUp
+      ParentColor = False
+      TabOrder = 9
+    end
+    object Label11: TLabel
+      Left = 25
+      Height = 48
+      Top = 2184
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 11.   Какой процесс называется изотермическим? Процесс, происходящий…'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label11MouseWheelDown
+      OnMouseWheelUp = Label11MouseWheelUp
+    end
+    object RadioGroup11: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 2232
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) при постоянной температуре'
+        '2) при постоянном давлении'
+        '3) при постоянном объеме'
+        '4) при постоянной теплоемкости'
+      )
+      OnMouseWheelDown = RadioGroup11MouseWheelDown
+      OnMouseWheelUp = RadioGroup11MouseWheelUp
+      ParentColor = False
+      TabOrder = 10
+    end
+    object Label12: TLabel
+      Left = 24
+      Height = 44
+      Top = 2376
+      Width = 714
+      AutoSize = False
+      Caption = 'Задача 12.   Внутренняя энергия заданной массы m идеального газа зависит только от …'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label12MouseWheelDown
+      OnMouseWheelUp = Label12MouseWheelUp
+    end
+    object RadioGroup12: TRadioGroup
+      Left = 24
+      Height = 129
+      Top = 2424
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) объема'
+        '2) давления'
+        '3) формы сосуда'
+        '4) температуры'
+      )
+      OnMouseWheelDown = RadioGroup12MouseWheelDown
+      OnMouseWheelUp = RadioGroup12MouseWheelUp
+      ParentColor = False
+      TabOrder = 11
+    end
+    object Label13: TLabel
+      Left = 24
+      Height = 96
+      Top = 2568
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 13.   В воду температурой 15°С и объемом 2 л опустили неизвестный сплав массой 1 кг и температурой 90°С. В результате теплообмена установилась температура 20°С. Какова удельная теплоемкость сплава (Дж/кг•К), если удельная теплоемкость воды равна 4200 Дж/кг•К?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label13MouseWheelDown
+      OnMouseWheelUp = Label13MouseWheelUp
+    end
+    object RadioGroup13: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 2664
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) 400'
+        '2) 600'
+        '3) 1100'
+        '4) 1300'
+      )
+      OnMouseWheelDown = RadioGroup13MouseWheelDown
+      OnMouseWheelUp = RadioGroup13MouseWheelUp
+      ParentColor = False
+      TabOrder = 12
+    end
+    object Label14: TLabel
+      Left = 24
+      Height = 68
+      Top = 2808
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 14.   На сколько мегаджоулей отличается внутренняя энергия 2 кг водяного пара при температуре 100°С от внутренней энергии 2 кг воды при этой же температуре? Lв=2,3 МДж/кг'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label14MouseWheelDown
+      OnMouseWheelUp = Label14MouseWheelUp
+    end
+    object RadioGroup14: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 2880
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) на 4,6 МДж больше'
+        '2) на 2,3 МДж больше'
+        '3) не отличаются'
+        '4) на 2,3 МДж меньше'
+      )
+      OnMouseWheelDown = RadioGroup14MouseWheelDown
+      OnMouseWheelUp = RadioGroup14MouseWheelUp
+      ParentColor = False
+      TabOrder = 13
+    end
+    object Label15: TLabel
+      Left = 24
+      Height = 52
+      Top = 3024
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 15.   Сколько льда (кг) растает, если лед массой 5 кг и температурой 0°С опустить в воду массой 10 кг и температурой 0°С?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label15MouseWheelDown
+      OnMouseWheelUp = Label15MouseWheelUp
+    end
+    object RadioGroup15: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 3080
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) 3'
+        '2) 2'
+        '3) 1'
+        '4) 0'
+      )
+      OnMouseWheelDown = RadioGroup15MouseWheelDown
+      OnMouseWheelUp = RadioGroup15MouseWheelUp
+      ParentColor = False
+      TabOrder = 14
+    end
+    object Label17: TLabel
+      Left = 24
+      Height = 72
+      Top = 3224
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 16.   Азот массой 20 кг нагревается при постоянном давлении от 0° до 200°С. Оцените, на сколько нанограммов увеличится масса азота? Удельная теплоемкость азота при постоянном давлении равна 1,05 кДж/(кг•К).'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label17MouseWheelDown
+      OnMouseWheelUp = Label17MouseWheelUp
+    end
+    object Edit1: TEdit
+      Left = 25
+      Height = 28
+      Top = 3312
+      Width = 155
+      TabOrder = 15
+    end
+    object Label18: TLabel
+      Left = 24
+      Height = 52
+      Top = 3360
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 17.   Какая работа (Дж) совершается при изохорном нагревании одного моля идеального газа на 20 К?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label18MouseWheelDown
+      OnMouseWheelUp = Label18MouseWheelUp
+    end
+    object Edit2: TEdit
+      Left = 25
+      Height = 28
+      Top = 3432
+      Width = 155
+      TabOrder = 16
+    end
+    object Label19: TLabel
+      Left = 24
+      Height = 68
+      Top = 3480
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 18.   Какое количество теплоты (кДж) необходимо затратить, чтобы нагреть 2 кг воды от её температуры замерзания до температуры кипения (100°С)? Удельная теплоемкость воды равна 4200 Дж/(кг•К).'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+      OnMouseWheelDown = Label19MouseWheelDown
+      OnMouseWheelUp = Label19MouseWheelUp
+    end
+    object Edit3: TEdit
+      Left = 24
+      Height = 28
+      Top = 3568
+      Width = 156
+      TabOrder = 17
+    end
+    object Button1: TButton
+      Left = 320
+      Height = 48
+      Top = 3624
+      Width = 107
+      Caption = 'Результат'
+      OnClick = Button1Click
+      TabOrder = 18
+    end
+    object Label20: TLabel
+      Left = 24
+      Height = 102
+      Top = 8
+      Width = 776
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Задачи'#13#10' по термодинамике'
+      Color = 4227327
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clWhite
+      Font.Height = -43
+      Font.Name = 'Bookman Old Style'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      OnClick = Label20Click
+      OnMouseWheelDown = Label20MouseWheelDown
+      OnMouseWheelUp = Label20MouseWheelUp
+    end
+  end
+end

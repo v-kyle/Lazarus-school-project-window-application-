@@ -1,0 +1,40 @@
+object Formspmkt: TFormspmkt
+  Left = 535
+  Height = 443
+  Top = 348
+  Width = 536
+  Caption = 'МКТ и ТД'
+  ClientHeight = 443
+  ClientWidth = 536
+  Color = 13434879
+  Position = poDesktopCenter
+  LCLVersion = '1.6.2.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 360
+    Top = 72
+    Width = 493
+    Caption = 'Количество вещества                                                        ν=N/ Na'#13#10'Молярная масса                                                                М=m/ν'#13#10'Cр. кин. энергия молекул одноатомного газа               Ek=3/2∙kT'#13#10'Основное уравнение МКТ                                                P=nkT=1/3nm0υ2'#13#10'Закон Гей – Люссака (изобарный процесс)                   V/T =const'#13#10'Закон Шарля (изохорный процесс)                                P/T =const'#13#10'Относительная влажность                                                φ=P/P0∙100%'#13#10'Внутр. энергия идеал. одноатомного газа                      U=3/2∙M/µ∙RT'#13#10'Работа газа                                                                           A=P∙ΔV'#13#10'Закон Бойля – Мариотта (изотермический процесс)    PV=const'#13#10'Количество теплоты при нагревании                             Q=Cm(T2-T1)'#13#10'Количество теплоты при плавлении                               Q=λm'#13#10'Количество теплоты при парообразовании                  Q=Lm'#13#10'Количество теплоты при сгорании топлива                   Q=qm'#13#10'Уравнение состояния идеального газа                           PV=m/M∙RT'#13#10'Первый закон термодинамики                                        ΔU=A+Q'#13#10'КПД тепловых двигателей                                                 η= (Q1 - Q2)/ Q1'#13#10'КПД идеал. двигателей  (цикл Карно)                              η= (Т1 - Т2)/ Т1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 0
+    Height = 56
+    Top = 0
+    Width = 537
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'МКТ и ТД'
+    Color = clBlack
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -47
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+end

@@ -1,0 +1,788 @@
+object Formzam: TFormzam
+  Left = 357
+  Height = 723
+  Top = 222
+  Width = 823
+  HorzScrollBar.Page = 792
+  VertScrollBar.Page = 723
+  VertScrollBar.Tracking = True
+  AutoScroll = True
+  Caption = 'Тесты и задачи по Механике'
+  ClientHeight = 723
+  ClientWidth = 802
+  Color = clWhite
+  OnCreate = FormCreate
+  OnMouseWheelDown = FormMouseWheelDown
+  OnMouseWheelUp = FormMouseWheelUp
+  Position = poDesktopCenter
+  LCLVersion = '1.6.2.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 3800
+    Top = 0
+    Width = 792
+    ClientHeight = 3800
+    ClientWidth = 792
+    Color = 9957901
+    ParentColor = False
+    TabOrder = 0
+    OnClick = Panel1Click
+    object Button1: TButton
+      Left = 320
+      Height = 48
+      Top = 3624
+      Width = 107
+      Caption = 'Результат'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object RadioGroup1: TRadioGroup
+      Left = 26
+      Height = 148
+      Top = 192
+      Width = 715
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 123
+      ClientWidth = 711
+      Color = clWhite
+      Items.Strings = (
+        '1) изменение положения тела в пространстве.'
+        '2) изменение расстояния между телами.'
+        '3) изменение относительного положения тел в пространстве с течением времени.'
+      )
+      ParentColor = False
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 26
+      Height = 72
+      Top = 120
+      Width = 714
+      AutoSize = False
+      Caption = 'Задача 1. Механическое движение есть…'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object Label2: TLabel
+      Left = 26
+      Height = 48
+      Top = 352
+      Width = 715
+      AutoSize = False
+      Caption = 'Задача 2.   Что принимают за материальную точку?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup2: TRadioGroup
+      Left = 27
+      Height = 129
+      Top = 400
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) Тело, размеры которого малы по сравнению с телом отсчета.'
+        '2) Тело, размеры которого много меньше, чем расстояние, пройденное телом.'
+        '3) Небольшое тело сферической формы.'
+      )
+      ParentColor = False
+      TabOrder = 2
+    end
+    object Label3: TLabel
+      Left = 26
+      Height = 72
+      Top = 544
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 3.   Что входит в понятие «система отсчета»?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup3: TRadioGroup
+      Left = 25
+      Height = 129
+      Top = 616
+      Width = 715
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 711
+      Color = clWhite
+      Items.Strings = (
+        '1) Масштабы измерения.'
+        '2) Проекция перемещения.'
+        '3) Система координат.'
+      )
+      ParentColor = False
+      TabOrder = 3
+    end
+    object Label4: TLabel
+      Left = 25
+      Height = 56
+      Top = 760
+      Width = 715
+      AutoSize = False
+      Caption = 'Задача 4.  Что называется телом отсчета?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup4: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 816
+      Width = 716
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 712
+      Color = clWhite
+      Items.Strings = (
+        '1) Абсолютно неподвижное тело.'
+        '2) Тело, чем-либо отличающееся от окружающих тел.'
+        '3) Тело, относительно которого отсчитывают положения тел.'
+      )
+      ParentColor = False
+      TabOrder = 4
+    end
+    object Label5: TLabel
+      Left = 25
+      Height = 48
+      Top = 960
+      Width = 715
+      AutoSize = False
+      Caption = 'Задача 5. Что такое путь?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup5: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 1008
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) Расстояние, пройденное телом по траектории.'
+        '2) Длина вектора перемещения.'
+        '3) Перемещение в единицу времени.'
+      )
+      ParentColor = False
+      TabOrder = 5
+    end
+    object Label6: TLabel
+      Left = 25
+      Height = 48
+      Top = 1152
+      Width = 714
+      AutoSize = False
+      Caption = 'Задача 6.  Что такое скорость?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup6: TRadioGroup
+      Left = 24
+      Height = 129
+      Top = 1200
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) Длина вектора перемещения.'
+        '2) Перемещение в единицу времени.'
+        '3) Промежуток времени между двумя моментами движения.'
+      )
+      ParentColor = False
+      TabOrder = 6
+    end
+    object Label7: TLabel
+      Left = 26
+      Height = 56
+      Top = 1344
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 7.   Что такое ускорение?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup7: TRadioGroup
+      Left = 25
+      Height = 137
+      Top = 1400
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 112
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) Вектор изменения скорости в единицу времени.'
+        '2) Длина вектора перемещения.'
+        '3) Промежуток времени между двумя моментами движения.'
+      )
+      ParentColor = False
+      TabOrder = 7
+    end
+    object Label8: TLabel
+      Left = 24
+      Height = 52
+      Top = 1552
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 8.   Что такое перемещение?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup8: TRadioGroup
+      Left = 26
+      Height = 129
+      Top = 1608
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) Вектор изменения скорости в единицу времени.'
+        '2) Направленный отрезок, соединяющий начальную и конечную точку движения.'
+        '3) Промежуток времени между двумя моментами движения.'
+      )
+      ParentColor = False
+      TabOrder = 8
+    end
+    object Label9: TLabel
+      Left = 25
+      Height = 72
+      Top = 1752
+      Width = 712
+      AutoSize = False
+      Caption = 'Задача 9.   Когда проекция перемещения отрицательна?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup9: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 1824
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) Когда вектор перемещения направлен против оси Х.'
+        '2) Всегда'
+        '3) Когда вектор перемещения направлен по оси Х.'
+      )
+      ParentColor = False
+      TabOrder = 9
+    end
+    object Label10: TLabel
+      Left = 24
+      Height = 72
+      Top = 1968
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 10.   Какая из перечисленных величин является скалярной?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup10: TRadioGroup
+      Left = 24
+      Height = 129
+      Top = 2040
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) Скорость.'
+        '2) Ускорение.'
+        '3) Перемещение.'
+        '4) Путь.'
+      )
+      ParentColor = False
+      TabOrder = 10
+    end
+    object Label11: TLabel
+      Left = 25
+      Height = 48
+      Top = 2184
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 11.  Какая из указанных скоростей наибольшая?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup11: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 2232
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) 1 м/с.'
+        '2) 100 см/с.'
+        '3) 100 см/мин.'
+        '4) 100 дм/с.'
+      )
+      ParentColor = False
+      TabOrder = 11
+    end
+    object Label12: TLabel
+      Left = 24
+      Height = 44
+      Top = 2376
+      Width = 714
+      AutoSize = False
+      Caption = 'Задача 12.   Какая из указанных скоростей наименьшая?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup12: TRadioGroup
+      Left = 24
+      Height = 129
+      Top = 2424
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 104
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) 1 м/с.'
+        '2) 100 см/с.'
+        '3) 100 см/мин.'
+        '4) 100 дм/с.'
+      )
+      ParentColor = False
+      TabOrder = 12
+    end
+    object Label13: TLabel
+      Left = 24
+      Height = 96
+      Top = 2568
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 13.   Колличество оборотов, которое совершает тело за единицу времени, называется'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup13: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 2664
+      Width = 714
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 710
+      Color = clWhite
+      Items.Strings = (
+        '1) частотой обращения.'
+        '2) периодом.'
+        '3) временем движения.'
+      )
+      ParentColor = False
+      TabOrder = 13
+    end
+    object Label14: TLabel
+      Left = 24
+      Height = 68
+      Top = 2808
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 14.   В каких единицах измеряется угловая скорость?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup14: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 2880
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) м/с.'
+        '2) рад.'
+        '3) м/с²'
+        '4) рад/с.'
+      )
+      ParentColor = False
+      TabOrder = 14
+    end
+    object Label15: TLabel
+      Left = 24
+      Height = 52
+      Top = 3024
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 15.   Чему равен период минутной стрелки?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object RadioGroup15: TRadioGroup
+      Left = 24
+      Height = 128
+      Top = 3080
+      Width = 713
+      AutoFill = True
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 103
+      ClientWidth = 709
+      Color = clWhite
+      Items.Strings = (
+        '1) 24 часа.'
+        '2) 3600 секунд.'
+        '3) 12 часов.'
+        '4) 60 секунд.'
+      )
+      ParentColor = False
+      TabOrder = 15
+    end
+    object Label17: TLabel
+      Left = 24
+      Height = 72
+      Top = 3224
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 16.  Первую половину пути автомобиль проехал со средней скоростью v1 = 60 км/ч, а вторую — со средней скоростью v2 = 40 км/ч. Определить среднюю скорость автомобиля на всем пути.'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object Edit1: TEdit
+      Left = 25
+      Height = 28
+      Top = 3312
+      Width = 155
+      TabOrder = 16
+    end
+    object Label18: TLabel
+      Left = 24
+      Height = 72
+      Top = 3352
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 17.  Экваториальный радиус Земли равен 6370 км. Определить линейную скорость движения точек экватора при вращении Земли вокруг оси (ответ дать в м/с).'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object Edit2: TEdit
+      Left = 25
+      Height = 28
+      Top = 3432
+      Width = 155
+      TabOrder = 17
+    end
+    object Label19: TLabel
+      Left = 24
+      Height = 68
+      Top = 3480
+      Width = 713
+      AutoSize = False
+      Caption = 'Задача 18. Человек массой 70 килограмм бежит со скоростью 7 м/с, догоняет тележку, движущуюся со скоростью 4 м/с, и вскакивает на неё. Масса тележки 50 килограмм. С какой скоростью будет двигаться тележка?'
+      Color = 15975004
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -20
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+    object Edit3: TEdit
+      Left = 24
+      Height = 28
+      Top = 3568
+      Width = 156
+      TabOrder = 18
+    end
+    object Label20: TLabel
+      Left = 0
+      Height = 102
+      Top = 0
+      Width = 792
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Задачи'#13#10' по Механике'
+      Color = 8453888
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clWhite
+      Font.Height = -43
+      Font.Name = 'Bookman Old Style'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+  end
+end

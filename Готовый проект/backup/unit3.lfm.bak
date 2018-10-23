@@ -1,0 +1,26 @@
+object Formsprav: TFormsprav
+  Left = 454
+  Height = 153
+  Top = 196
+  Width = 664
+  Caption = 'Справка'
+  ClientHeight = 153
+  ClientWidth = 664
+  Color = clActiveCaption
+  Position = poDesktopCenter
+  LCLVersion = '1.6.2.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 99
+    Top = 16
+    Width = 626
+    Caption = 'Обучающая программа по физике'#13#10'Автор: ученик 10В класса СОШ№1 Кызъюрова Леонида'#13#10'Апрель 2017 года.'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -27
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end

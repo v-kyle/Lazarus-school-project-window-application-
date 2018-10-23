@@ -1,0 +1,47 @@
+object FormSp: TFormSp
+  Left = 1069
+  Height = 158
+  Top = 253
+  Width = 303
+  Caption = 'FormSp'
+  ClientHeight = 158
+  ClientWidth = 303
+  Color = clRed
+  LCLVersion = '1.6.2.0'
+  object Button1: TButton
+    Left = 38
+    Height = 44
+    Top = 30
+    Width = 114
+    Caption = 'Механика'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 152
+    Height = 44
+    Top = 30
+    Width = 114
+    Caption = 'Электричество'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 38
+    Height = 44
+    Top = 72
+    Width = 114
+    Caption = 'МКТ и ТД'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 152
+    Height = 44
+    Top = 72
+    Width = 114
+    Caption = 'Оптика'
+    OnClick = Button4Click
+    TabOrder = 3
+  end
+end

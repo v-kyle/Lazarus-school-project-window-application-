@@ -1,0 +1,40 @@
+object Formspo: TFormspo
+  Left = 395
+  Height = 287
+  Top = 353
+  Width = 391
+  Caption = 'Оптика'
+  ClientHeight = 0
+  ClientWidth = 0
+  Color = 12451839
+  Position = poDesktopCenter
+  LCLVersion = '1.4.2.0'
+  object Label1: TLabel
+    Left = 32
+    Height = 140
+    Top = 96
+    Width = 342
+    Caption = 'Закон преломления света      n21=n2/n1= υ 1/ υ 2'#13#10'Показатель преломления      n21=sin α/sin γ'#13#10'Формула тонкой линзы          1/F=1/d + 1/f'#13#10'Оптическая сила линзы          D=1/F'#13#10'max интерференции:               Δd=kλ,'#13#10'min интерференции:                Δd=(2k+1)λ/2'#13#10'Диф.решетка                            d∙sin φ=k λ'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 0
+    Height = 64
+    Top = 0
+    Width = 392
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Оптика'
+    Color = clBlack
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -47
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+end

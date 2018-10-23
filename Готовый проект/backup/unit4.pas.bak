@@ -1,0 +1,41 @@
+unit Unit4;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TFormza }
+
+  TFormza = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    procedure Label2MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Formza: TFormza;
+
+implementation
+           uses unit10;
+{$R *.lfm}
+
+{ TFormza }
+
+procedure TFormza.Label2MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+  formzatd.visible:=true;
+end;
+
+end.
+
